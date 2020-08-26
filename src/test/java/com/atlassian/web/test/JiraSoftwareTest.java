@@ -13,7 +13,7 @@ import java.util.Locale;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class LoginTest {
+public class JiraSoftwareTest {
     String nameProject = "Ростелеком";
     Faker faker = new Faker(new Locale("ru"));
     String summary = faker.lorem().characters(255);
