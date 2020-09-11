@@ -7,10 +7,10 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BrowserProjectPage {
-    private ElementsCollection projectList = $$("[class='sc-clBsIJ huNkAi']");
-    private SelenideElement projectBoard = $("[class='sc-iGPElx gIKjkS']");
+    private static final ElementsCollection projectList = $$("[class='sc-gJqsIT jBovqy']");
+    private static final SelenideElement projectBoard = $("[class='sc-giadOv dqRnea']");
 
-    public BrowserProjectPage(String projectName) {
+    public BrowserProjectPage() {
         projectBoard.waitUntil(visible, 30000);
     }
 

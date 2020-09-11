@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class CheckRegistrationPage {
-    private SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
+    private static final SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
 
     public CheckRegistrationPage(){
         header.shouldBe(text("Проверьте входящую почту, чтобы завершить регистрацию"));

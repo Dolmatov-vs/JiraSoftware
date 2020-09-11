@@ -8,11 +8,11 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationPage {
-    private SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
-    private SelenideElement emailField = $("#email");
-    private SelenideElement displayNameField = $("#displayName");
-    private SelenideElement passwordField = $("#password");
-    private SelenideElement registrationButton = $("#signup-submit");
+    private static final SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
+    private static final SelenideElement emailField = $("#email");
+    private static final SelenideElement displayNameField = $("#displayName");
+    private static final SelenideElement passwordField = $("#password");
+    private static final SelenideElement registrationButton = $("#signup-submit");
 
     public RegistrationPage() {
         header.shouldBe(visible, text("Регистрация аккаунта"));

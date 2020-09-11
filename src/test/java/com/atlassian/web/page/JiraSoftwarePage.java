@@ -12,15 +12,15 @@ public class JiraSoftwarePage {
     String selectAll = chord(Keys.CONTROL, "a");
     Keys del = Keys.DELETE;
 
-    private SelenideElement mainActionsPanel = $("[data-testid='atlassian-navigation--primary-actions']");
-    private SelenideElement createTaskButton = $("#createGlobalItem");
+    private static final SelenideElement mainActionsPanel = $("[data-testid='atlassian-navigation--primary-actions']");
+    private static final SelenideElement createTaskButton = $("#createGlobalItem");
 
-    private SelenideElement projectField = $("#project-field");
-    private SelenideElement issueTypeField = $("#issuetype-field");
-    private SelenideElement summaryField = $("#summary");
-    private SelenideElement descriptionField = $("#description");
-    private SelenideElement createButton = $("#create-issue-submit");
-    private SelenideElement numberTask = $("[class='issue-created-key issue-link']");
+    private static final SelenideElement projectField = $("#project-field");
+    private static final SelenideElement issueTypeField = $("#issuetype-field");
+    private static final SelenideElement summaryField = $("#summary");
+    private static final SelenideElement descriptionField = $("#description");
+    private static final SelenideElement createButton = $("#create-issue-submit");
+    private static final SelenideElement numberTask = $("[class='issue-created-key issue-link']");
 
     public JiraSoftwarePage() {
         mainActionsPanel.waitUntil(Condition.visible, 30000);

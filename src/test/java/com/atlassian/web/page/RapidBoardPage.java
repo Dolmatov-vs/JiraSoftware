@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class RapidBoardPage {
 
-    private ElementsCollection navigationList = $$("[class='css-1olrtn']");
-    private SelenideElement projectNameHeader = $("[class='css-1xaaz5m']");
+    private static final ElementsCollection navigationList = $$("[class='css-1olrtn']");
+    private static final SelenideElement projectNameHeader = $("[class='css-1xaaz5m']");
 
     public RapidBoardPage(String projectName) {
         projectNameHeader.waitUntil(visible, 30000).shouldBe(text(projectName));

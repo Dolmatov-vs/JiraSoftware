@@ -7,11 +7,11 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
-    private SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
-    private SelenideElement userNameField = $("#username");
-    private SelenideElement loginSubmitButton = $("#login-submit");
-    private SelenideElement passwordField = $("#password");
-    private SelenideElement registrationAccountButton = $("[class='primary-action']");
+    private static final SelenideElement header = $("[class='sc-kkGfuU lajGgq']");
+    private static final SelenideElement userNameField = $("#username");
+    private static final SelenideElement loginSubmitButton = $("#login-submit");
+    private static final SelenideElement passwordField = $("#password");
+    private static final SelenideElement registrationAccountButton = $("[class='primary-action']");
 
     public LoginPage() {
         header.shouldBe(visible, text("Войдите в свой аккаунт"));

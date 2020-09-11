@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Condition.*;
 
 public class HomeContentPage {
-    private SelenideElement jiraSoftware = $("[class='sc-bZQynM jCvIAG']");
+    private static final SelenideElement jiraSoftware = $("[class='sc-bxivhb gwPQeF']");
 
     public HomeContentPage(UserData.UserInfo user) {
         jiraSoftware.waitUntil(visible, 30000).shouldBe(text(user.getLastName()));
